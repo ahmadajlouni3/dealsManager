@@ -1,0 +1,260 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    font:normal normal normal 16px/1.2 arial;
+    background-color: #eee;
+}
+nav{
+    background-color:#333;
+    height:100vh;
+    width:10vw;
+    display:flex;
+    flex-flow:column nowrap;
+    position:fixed;
+    border:1px solid black;
+    box-shadow: 0px 0px 5px black;
+}
+nav a{
+    text-decoration: none;
+    color:white;
+    display:inline-block;
+    padding:10px 20px;
+    transition: all 0.2s;
+}
+nav a:hover{
+    background-color: mediumseagreen;
+}
+nav img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    margin:20px auto;
+}
+/* nav a:last-child{
+    margin-top:auto;
+    margin-bottom:10px;
+} */
+
+
+
+aside{
+    height:100vh;
+    width:90vw;
+    display:flex;
+    flex-flow:column nowrap;
+    margin-left:10vw;
+}
+.subnav{
+    display:flex;
+    flex-flow:row nowrap;
+    background-color: #333;
+    color:white;
+    padding:10px 30px;
+    align-items: center;
+}
+.subnav p{
+    margin-left:auto;
+}
+
+.containerOfInitial{
+    display:grid;
+    grid-template-columns:repeat(auto-fill , minmax(400px, 1fr));
+    justify-items: center;
+    align-items: center;
+    margin:20px;
+}
+.containerOfInitial div{
+    border:1px solid #333;
+    width:80%;
+    text-align: center;
+    box-shadow: 0px 0px 5px #333;
+    padding:20px;
+}
+
+.tableOfDeals{
+    margin:40px;
+    display:flex;
+    flex-flow:column nowrap;
+}
+.tableOfDeals .addDeals{
+    width:10vw;
+    padding:10px;
+    font:normal normal bold 16px/1.2 arial;
+    background-color:#333;
+    color:white;
+    border:1px solid #333;
+    transition: all 0.2s;
+}
+
+.tableOfDeals .addDeals:hover{
+    background-color:white;
+    color:#333;
+}
+
+.tableOfDeals h3{
+    text-decoration: underline;
+}
+
+.stateOfDeals{
+    display:grid;
+    grid-template-columns:repeat(auto-fill , minmax(650px , 1fr));
+}
+
+
+.tableOfRemaining, .tableOfComplete{
+    display:flex;
+    flex-flow:column nowrap;
+    margin-right:80px;
+}
+
+
+.item{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    border:1px solid #333;
+    padding:0px 30px;
+    border-radius:5px;
+    margin:5px;
+}
+.mainFont{
+    font-weight:bold;
+    font-size:18px;
+}
+.greenDeal{
+    color:mediumseagreen;
+}
+.redDeal{
+    color:tomato;
+}
+
+.stateAndMoreInfo p select{
+    background-color:transparent;
+    font-size:16px;
+    padding:0px 15px;
+}
+
+.stateAndMoreInfo , .typeAndEntry{
+    text-align: center;
+}
+
+.bgInsertDeal{
+    
+    position:absolute;
+    width:100vw;
+    height:100%;
+    background-color:rgba(0 , 0,0 ,0.8);
+    top:0;
+    left:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    display:none;
+}
+
+.insertDeal{
+    background-color: #eee;
+    width:40vw;
+    height:50vh;
+    display:grid;
+    grid-template-columns:1fr;
+    padding:20px;
+}
+.insertDeal div{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.typeOfDealBtn{
+    padding:5px 15px;
+    font:normal normal normal 16px/1.2 arial;
+    border:none;
+    margin:10px;
+}
+.typeOfDealBtn:first-child{
+    background-color: mediumseagreen;
+    color:white;
+}
+.typeOfDealBtn:last-child{
+    background-color: tomato;
+    color:white;
+}
+
+.insertDeal div input{
+    font:normal normal normal 18px/1.2 arial;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1200px){
+    aside{
+        height:100vh;
+        width:100%;
+        display:flex;
+        flex-flow:column nowrap;
+        margin-left:0;
+        margin-top:15vh;
+    }
+    .subnav{
+        display:none;
+    }
+    nav{
+        display:flex;
+        flex-flow:row nowrap;
+        width:100vw;
+        height:5vh;
+        margin-top:-15vh;
+        padding:0px 10px;
+        flex-flow:row nowrap;
+        align-items: center;
+    }
+    nav a{
+        font-size:0.8em;
+    }
+    nav a:last-child{
+        margin:0px 20px 0px 20px;
+        order:2
+    }
+    nav img{
+        margin:auto;
+        order:1;
+    }
+    .containerOfInitial{
+        margin:10px 0px;
+    }
+
+    .containerOfInitial div{
+        margin:10px;
+    }
+    .tableOfDeals .addDeals{
+        width:30vw;
+    }
+
+    .remainingDeals , .completeDeals{
+       width: 80vw;
+    }
+    .tableOfRemaining , .tableOfComplete{
+        width:100%;
+    }
+    .insertDeal{
+        width:70%;
+    }
+    .insertDeal input ,.insertDeal button{
+        width:100%;
+    }
+
+}

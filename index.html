@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <img class="logo" src="assets/deals.png" alt="">
+        <a href="#">deals manager</a>
+        <!-- <a href="#">DCA</a> -->
+        <a href="#">Signout</a>
+    </nav>
+    <aside>
+        <section class="subnav">
+            <p>Ahmad</p>
+        </section>
+
+
+
+        <section class="entireProgram">
+            <div class="containerOfInitial">
+                <div>
+                    <h4>Balance</h4>
+                    <h2><span>$</span>1000</h2>
+                </div>
+                <div>
+                    <h4>Risk</h4>
+                    <h2><span>%</span>1</h2>
+                </div>
+                <div>
+                    <h4>remaining</h4>
+                    <h2><span>$</span>1000</h2>
+                </div>
+            </div>
+
+
+            <div class="tableOfDeals">
+                <button class="addDeals">Add Deal</button>
+                <br>
+                <div class="stateOfDeals">
+                    <div class="remainingDeals">
+                        <h4>Remaining Deals</h4>
+
+                        <div class="tableOfRemaining">
+                            <div class="item">
+                                <div class="nameAndDate">
+                                    <p class="mainFont">Bitcoin</p>
+                                    <p>12/5/2024</p>
+                                </div>
+                                <div class="typeAndEntry">
+                                    <p class="mainFont greenDeal">Long at</p>
+                                    <p><span>$</span>14456.25</p>
+                                </div>
+                                <div class="stateAndMoreInfo">
+                                    <p class="mainFont">
+                                        <select name="" id="">
+                                            <option>Open</option>
+                                            <option>Close</option>
+                                        </select>
+                                    </p>
+                                    <button>More Info</button>
+                                </div>
+                            </div>
+
+
+                            <div class="item">
+                                <div class="nameAndDate">
+                                    <p class="mainFont">Bitcoin</p>
+                                    <p>12/5/2024</p>
+                                </div>
+                                <div class="typeAndEntry">
+                                    <p class="mainFont redDeal">short at</p>
+                                    <p><span>$</span>14456.25</p>
+                                </div>
+                                <div class="stateAndMoreInfo">
+                                    <p class="mainFont">
+                                        <select name="" id="">
+                                            <option>Open</option>
+                                            <option>Close</option>
+                                        </select>
+                                    </p>
+                                    <button>More Info</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div class="completeDeals">
+                        <h4>Complete Deals</h4>
+
+                        <div class="tableOfComplete">
+                            <div class="item">
+                                <div class="nameAndDate">
+                                    <p class="mainFont">Bitcoin</p>
+                                    <p>12/5/2024</p>
+                                </div>
+                                <div class="typeAndEntry">
+                                    <p class="mainFont greenDeal">Long at</p>
+                                    <p><span>$</span>14456.25</p>
+                                </div>
+                                <div class="stateAndMoreInfo">
+                                    <p class="mainFont">
+                                        close
+                                    </p>
+                                    <button>More Info</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+
+
+    </aside>
+
+
+
+    <div class="bgInsertDeal">
+        <div class="insertDeal">
+            <div>
+                <span>Pairs / Crypto Name</span>
+                <input type="text" >
+            </div>
+            <div>
+                <span>Entry Price</span>
+                <input type="text" >
+            </div>
+            <div>
+                <span>take Profit</span>
+                <input type="text" >
+            </div>
+            <div>
+                <span>Stop loss</span>
+                <input type="text" >
+            </div>
+            <div>
+                <span>type of Deal</span>
+                <div class="typeOfDealBtnContainer">
+                    <button class="typeOfDealBtn">Long</button>
+                    <button class="typeOfDealBtn">Short</button>
+                </div>
+            </div>
+            <div>
+                <button>Insert Deal Now</button>
+                <button id="cancelAddDeal">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
